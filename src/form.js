@@ -24,15 +24,15 @@ class Formm extends React.Component {
         this.state = {
           name: '',
           address: "",
-          quran: '0',
-          drood: '0',
-          surahmulk: '0',
-          aytalqursi: '0',
-          surahyaseen: '0',
-          surahrehman: '0',
-          astagfaar: '0',
-          kalmaetayyiba: '0',
-          tasbihefatima: '0',
+          quran: 0,
+          drood: 0,
+          surahmulk: 0,
+          aytalqursi: 0,
+          surahyaseen: 0,
+          surahrehman: 0,
+          astagfaar: 0,
+          kalmaetayyiba: 0,
+          tasbihefatima: 0,
           teendinmadaniqafla: false,
           aikmonthmadaniqafla: false,
           tahajjud: false,
@@ -157,21 +157,21 @@ class Formm extends React.Component {
             <Col md={4}>
               <FormGroup>
                 <Label for="exampleCity">Quran e Pak</Label>
-                <Input type="text" value={quran}
+                <Input  type="number" value={quran}
                   onChange={this.quran} />
               </FormGroup>
             </Col>
             <Col md={4}>
               <FormGroup>
                 <Label for="exampleState">Drood e Pak</Label>
-                <Input type="text" value={drood}
+                <Input  type="number" value={drood}
                   onChange={this.drood} />
               </FormGroup>
             </Col>
             <Col md={4}>
               <FormGroup>
                 <Label for="exampleCity">Surah e Mulk</Label>
-                <Input type="text" value={surahmulk}
+                <Input  type="number" value={surahmulk}
                   onChange={this.surahmulk} />
               </FormGroup>
             </Col>
@@ -183,21 +183,21 @@ class Formm extends React.Component {
             <Col md={4}>
               <FormGroup>
                 <Label for="exampleZip">Ayat ul Kursi</Label>
-                <Input type="text" value={aytalqursi}
+                <Input type="number" value={aytalqursi}
                   onChange={this.aytalqursi} />
               </FormGroup>
             </Col>
             <Col md={4}>
               <FormGroup>
                 <Label for="exampleState">Surah e Yaaseen</Label>
-                <Input type="text" value={surahyaseen}
+                <Input type="number" value={surahyaseen}
                   onChange={this.surahyaseen} />
               </FormGroup>
             </Col>
             <Col md={4}>
               <FormGroup>
                 <Label for="exampleZip">Surah Rehman</Label>
-                <Input type="text" value={surahrehman}
+                <Input type="number" value={surahrehman}
                   onChange={(e) => this.setState({ surahrehman: e.target.value })} />
               </FormGroup>
             </Col>
@@ -210,21 +210,21 @@ class Formm extends React.Component {
             <Col md={4}>
               <FormGroup>
                 <Label for="exampleCity">Astagfaar</Label>
-                <Input type="text" value={astagfaar}
+                <Input type="number" value={astagfaar}
                   onChange={(e) => this.setState({ astagfaar: e.target.value })} />
               </FormGroup>
             </Col>
             <Col md={4}>
               <FormGroup>
                 <Label for="exampleState">Kalma e Tayyiba</Label>
-                <Input type="text" value={kalmaetayyiba}
+                <Input type="number" value={kalmaetayyiba}
                   onChange={(e) => this.setState({ kalmaetayyiba: e.target.value })} />
               </FormGroup>
             </Col>
             <Col md={4}>
               <FormGroup>
                 <Label for="exampleZip">Tasbeeh e Fatima</Label>
-                <Input type="text" value={tasbihefatima}
+                <Input type="number" value={tasbihefatima}
                   onChange={(e) => this.setState({ tasbihefatima: e.target.value })} />
               </FormGroup>
             </Col>
